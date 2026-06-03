@@ -1,0 +1,32 @@
+
+Final Tuned Model Evaluation
+
+Accuracy: 0.7299
+Precision: 0.1307
+Recall: 0.8000
+F1 Score: 0.2247
+ROC AUC: 0.8415
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.99      0.73      0.84       972
+           1       0.13      0.80      0.22        50
+
+    accuracy                           0.73      1022
+   macro avg       0.56      0.76      0.53      1022
+weighted avg       0.94      0.73      0.81      1022
+
+
+Model Interpretation:
+The final model was evaluated using accuracy, precision, recall, F1-score, ROC AUC,
+classification report, confusion matrix, and ROC curve.
+
+Because the stroke dataset is highly imbalanced, accuracy alone is not enough to judge
+the model. The model achieved high recall for the stroke class, meaning it detected most
+actual stroke cases. This is important in healthcare screening because missing a possible
+stroke-risk patient is more serious than incorrectly classifying a low-risk patient as high-risk.
+
+However, the precision for the stroke class was low, meaning that many patients predicted
+as high-risk were actually non-stroke cases. Therefore, the model should be interpreted as
+a screening support tool, not as a final medical diagnostic system.

@@ -1,3 +1,4 @@
+
 # Walaa Salah Stroke Prediction Project
 
 ## Project Description
@@ -88,5 +89,11 @@ The final model was deployed using Streamlit.
 ## How to Run the App
 Install the required packages:
 
-```bash
 pip install -r requirements.txt
+
+Run the Streamlit app:
+
+streamlit run streamlit_app.py
+
+## Important Note
+This model is a screening support tool and should not be used as a replacement for professional medical diagnosis.

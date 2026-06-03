@@ -1,0 +1,50 @@
+
+Plot Evaluation
+
+1. Target Distribution:
+The target variable is highly imbalanced. Most patients belong to the non-stroke class,
+while only a small number belong to the stroke class. This means that accuracy alone can
+be misleading, and recall, precision, F1-score, ROC AUC, and the confusion matrix should
+also be used.
+
+2. Age Distribution:
+The dataset contains a wide range of ages. This is useful because age is medically relevant
+to stroke prediction.
+
+3. Average Glucose Level Distribution:
+Most patients have moderate glucose levels, but there are high glucose outliers. These
+values may represent real high-risk patients, so they should not be removed automatically.
+
+4. Age vs Stroke:
+Stroke patients are generally older than non-stroke patients. This makes age one of the
+strongest predictors in the dataset.
+
+5. Hypertension vs Stroke:
+Patients with hypertension show a higher proportional risk of stroke. However, because the
+dataset is imbalanced, the plot should be interpreted using proportions, not only counts.
+
+6. Heart Disease vs Stroke:
+Heart disease appears to be associated with higher stroke risk. Still, the majority class
+dominates the bar heights because most patients did not have a stroke.
+
+7. Smoking Status vs Stroke:
+Smoking status does not separate the stroke and non-stroke classes strongly by itself.
+It may still contribute to prediction when combined with other features.
+
+8. Correlation Heatmap:
+Age has the strongest positive correlation with stroke. Hypertension, heart disease, and
+average glucose level also show weaker positive correlations.
+
+9. Model Performance Comparison:
+Logistic Regression and SVM achieved the best recall for stroke detection. Some models
+such as KNN, Random Forest, and Gradient Boosting achieved high accuracy but very low
+recall, meaning they missed many stroke cases.
+
+10. Confusion Matrix:
+The confusion matrix shows how many stroke and non-stroke cases were correctly and
+incorrectly classified. The model detects many stroke cases but also produces false positives,
+which is acceptable for a screening-style healthcare model.
+
+11. ROC Curve:
+The ROC curve shows that the final model has good ability to separate stroke-risk patients
+from non-stroke patients. A ROC AUC around 0.84 indicates good ranking performance.
