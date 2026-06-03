@@ -1,3 +1,5 @@
+# ppt link and voice over
+https://drive.google.com/file/d/12i1eAgM55Z_oY9HmAiEbSK6rnSMRzQk_/view?usp=sharing
 
 # Walaa Salah Stroke Prediction Project
 
